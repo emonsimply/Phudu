@@ -7,6 +7,7 @@ import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import Home from '../pages/Home/Home';
 import MyBookings from '../pages/MyBookings/MyBookings';
 import Blogs from '../pages/Blogs/Blogs';
+import DoctorDetails from '../pages/DoctorDetails/DoctorDetails';
 
 
 
@@ -19,17 +20,22 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader:()=>fetch('doctors.json'),
-        path:"/",
-        Component:Home
+        loader: () => fetch('doctors.json'),
+        path: "/",
+        Component: Home
       },
       {
-        path:"/myBookings",
-        Component:MyBookings
+        path: "/myBookings",
+        Component: MyBookings
       },
       {
-        path:"/blogs",
-        Component:Blogs
+        path: "/blogs",
+        Component: Blogs
+      },
+      {
+        path: "doctorDetails/:id",
+        loader: () => fetch('doctors.json'),
+        Component: DoctorDetails
       }
     ]
   },

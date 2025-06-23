@@ -1,15 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 
 const Navbar = () => {
 
   const links = <>
-    <Link to='/'><li className='opacity-80'>Home</li></Link>
-    <Link
-      to='/myBookings'><li className='mx-8 opacity-80'>My-Bookings</li>
-    </Link>
-    <Link to='/blogs'><li className='opacity-80'>Blogs</li></Link>
-    <Link to='/hhh'><li className='opacity-80 ml-8'>Contact Us</li></Link>
+    <NavLink
+      to='/'
+      className={({ isActive }) => isActive ? 'text-blue-600 border-b-2 border-blue-600' : 'opacity-80'}
+    >
+      <li>Home</li>
+    </NavLink>
+
+    <NavLink
+      to='/myBookings'
+      className={({ isActive }) => isActive ? 'text-blue-600 mx-8 border-b-2 border-blue-600' : 'opacity-80 mx-8'}
+    >
+      <li>My-Bookings</li>
+    </NavLink>
+
+    <NavLink
+      to='/blogs'
+      className={({ isActive }) => isActive ? 'text-blue-600 border-b-2 border-blue-600' : 'opacity-80'}
+    >
+      <li>Blogs</li>
+    </NavLink>
+
+    <NavLink
+      to='/hhh'
+      className={({ isActive }) => isActive ? 'text-blue-600 ml-8 border-b-2 border-blue-600' : 'opacity-80 ml-8'}
+    >
+      <li>Contact Us</li>
+    </NavLink>
   </>
 
   return (

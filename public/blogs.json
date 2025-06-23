@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is useState and how does it work in React?",
+    "answer": "useState is a Hook in React that allows you to add state to functional components. It returns a state variable and a function to update it. When the state changes, the component re-renders with the new value. Example: const [count, setCount] = useState(0);"
+  },
+  {
+    "question": "What is the purpose of useEffect in React?",
+    "answer": "useEffect is a Hook used to perform side effects in React components, such as fetching data, setting up subscriptions, or manually changing the DOM. It runs after the render and can be configured to run only when specific dependencies change."
+  },
+  {
+    "question": "What is a custom hook in React and when should you use one?",
+    "answer": "A custom hook is a JavaScript function that starts with 'use' and allows you to extract and reuse logic that uses other hooks like useState, useEffect, etc. Use custom hooks to keep your components clean and to reuse stateful logic across multiple components."
+  },
+  {
+    "question": "Difference between controlled and uncontrolled components? Which one is better?",
+    "answer": "Controlled components have their form data controlled by React through state. Uncontrolled components keep their form data in the DOM using refs. Controlled components are generally better for most applications because they give you full control over the form data and behavior."
+  },
+  {
+    "question": "Tell us something about useFormStatus() (explore and explain)",
+    "answer": "useFormStatus() is a React hook (available in React 18+ with the new form actions API) that allows you to track the status of a form submission in server components or during transitions. It provides status like 'pending', 'success', or 'error' to give user feedback such as loading indicators or success messages. It is mainly used with the <form> element and helps improve UX in modern data-driven applications."
+  }
+]

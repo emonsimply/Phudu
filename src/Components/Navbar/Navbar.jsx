@@ -13,7 +13,7 @@ const Navbar = () => {
 
     <NavLink
       to='/myBookings'
-      className={({ isActive }) => isActive ? 'text-blue-600 mx-8 border-b-2 border-blue-600' : 'opacity-80 mx-8'}
+      className={({ isActive }) => isActive ? 'text-blue-600 mx-8 border-b-2 border-blue-600' : 'opacity-80 lg:mx-8'}
     >
       <li>My-Bookings</li>
     </NavLink>
@@ -27,7 +27,7 @@ const Navbar = () => {
 
     <NavLink
       to='/hhh'
-      className={({ isActive }) => isActive ? 'text-blue-600 ml-8 border-b-2 border-blue-600' : 'opacity-80 ml-8'}
+      className={({ isActive }) => isActive ? 'text-blue-600 ml-8 border-b-2 border-blue-600' : 'opacity-80 lg:ml-8'}
     >
       <li>Contact Us</li>
     </NavLink>

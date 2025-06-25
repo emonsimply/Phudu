@@ -1,5 +1,9 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { bookAppointment } from '../../utils';
+import { toast } from 'react-toastify';
+import { useState } from 'react';
+
 
 const DoctorDetails = () => {
   const { id } = useParams();
@@ -8,6 +12,13 @@ const DoctorDetails = () => {
   const singleData = data.find(doctor => doctor.id === doctorId);
 
   const { image, name, education, specialty, experience, registration_number } = singleData;
+  const [isBooked, setIsBooked] = useState(false)
+
+  const handleAppointment = () => {
+    bookAppointment(singleData);
+    toast.success(`Appointment booked with Dr. ${name}`);
+    setIsBooked(true)
+  }
   return (
     <div>
       <div className='bg-gray-100 p-10 rounded-2xl my-6 text-center '>
@@ -57,6 +68,15 @@ const DoctorDetails = () => {
         <button
           className='px-3 py-0.5 py- bg-amber-50 text-amber-500 rounded-full text-xs'><span className='border rounded-full px-1.5 mr-2'>!</span>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.
         </button>
+        <br />
+        {/* <button onClick={handleAppointment} className='btn mt-8 w-full rounded-full bg-blue-500 text-white hover:bg-blue-700'>Book Appointment Now</button> */}
+        <button
+          onClick={handleAppointment}
+          className={`btn mt-8 w-full rounded-full text-white ${isBooked ? 'bg-green-500 hover:bg-green-600' : 'bg-blue-500 hover:bg-blue-700'}`}
+        >
+          {isBooked ? 'Appointment Booked' : 'Book Appointment Now'}
+        </button>
+
       </div>
     </div>
   );

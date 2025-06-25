@@ -8,6 +8,8 @@ const Root = () => {
     <div>
       <div className='mx-3 md:mx-24'>
         <Navbar></Navbar>
+      </div>
+      <div className='mx-3 md:mx-24 min-h-[calc(100vh-116px)]'>
         <Outlet></Outlet>
       </div>
       <div>

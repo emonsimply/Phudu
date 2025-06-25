@@ -6,7 +6,7 @@ import SuccessSection from '../../Components/SuccessSection/SuccessSection';
 
 const Home = () => {
   const data = useLoaderData();
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       <Banner></Banner>

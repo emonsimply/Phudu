@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <div className='py-20 bg-gray-100'>
       <div className='flex justify-center items-center gap-3 mb-4'>
-        <img className='w-10' src="/src/assets/icons8-plus-512.png" alt="" />
+        <img className='w-10' src="https://i.ibb.co/dwMgHnJg/icons8-plus-512.png" alt="logo" />
         <h1 className='text-2xl font-bold'>Phudu</h1>
       </div>
       <ul className='flex justify-center items-center'>
@@ -44,10 +44,10 @@ const Footer = () => {
       </ul>
       <hr className='my-8 w-2/3 mx-auto' />
       <div className='flex justify-center gap-5'>
-        <a href="https://hikmah.net/@emonsimply" target='_blank'><img className='w-8' src="/src/assets/hikmah.png" alt="" /></a>
-        <a href="https://www.facebook.com/foysalislamemon77" target='_blank'><img className='w-8' src="/src/assets/facebook.png" alt="" /></a>
-        <a href="https://x.com/emonsimply" target='_blank'><img  className='w-8' src="/src/assets/twitter.png" alt="" /></a>
-        <a href="https://www.instagram.com/emonsimply/" target='_blank'><img  className='w-8' src="/src/assets/social.png" alt="" /></a>
+        <a href="https://hikmah.net/@emonsimply" target='_blank'><img className='w-8' src="https://i.ibb.co/QjJ2pH1x/hikmah.png" alt="" /></a>
+        <a href="https://www.facebook.com/foysalislamemon77" target='_blank'><img className='w-8' src="https://i.ibb.co/Y4z81GQk/facebook.png" alt="" /></a>
+        <a href="https://x.com/emonsimply" target='_blank'><img  className='w-8' src="https://i.ibb.co/jvVyvtNs/twitter.png" alt="" /></a>
+        <a href="https://www.instagram.com/emonsimply/" target='_blank'><img  className='w-8' src="https://i.ibb.co/MxNF6D3S/social.png" alt="" /></a>
       </div>
     </div>
   );

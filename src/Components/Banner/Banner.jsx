@@ -12,8 +12,8 @@ const Banner = () => {
         <button className="btn rounded-full bg-blue-500 text-white">Search Now</button>
       </div>
       <div className='md:flex items-center justify-center gap-6'>
-        <img className='w-120 rounded-xl' src="/src/assets/doctor-image01.jpg" alt="" />
-        <img className='w-120 rounded-xl' src="/src/assets/doctor-image02.jpg" alt="" />
+        <img className='w-120 rounded-xl' src="https://i.ibb.co/67kZv7hp/doctor-image01.jpg" alt="" />
+        <img className='w-120 rounded-xl' src="https://i.ibb.co/3Yv3cFJR/doctor-image02.jpg" alt="" />
       </div>
     </div>
   );
